@@ -20,22 +20,22 @@
                 </thead>
                 <tbody>
                     @forelse ($trains as $train)
-                    <tr>
+                    <tr class="fs-6">
                         <td>{{ $train->company }}</td>
                         <td>{{ $train->departure_station }}</td>
                         <td>{{ $train->arrival_station }}</td>
                         <td>{{ $train->departure_time }}</td>
                         <td>{{ $train->arrival_time }}</td>
                         <td>{{ $train->cp }}</td>
-                        <td>{{ $train->wagons }}</td>
-                        <td>{{ $train->isInTime ? 'Yes' : 'No' }}</td>
-                        <td>{{ $train->isDeleted ? 'Yes' : 'No' }}</td>
+                        <td class="text-center">{{ $train->wagons }}</td>
+                        <td class="text-center">{{ $train->isInTime ? 'Yes' : 'No' }}</td>
+                        <td class="text-center">{{ $train->isDeleted ? 'Yes' : 'No' }}</td>
                     </tr>
                     @empty
                         <tr>
                             <td>Non ci sono treni da visualizzare.</td>
                         </tr>
-                    @endforelse()
+                    @endforelse
                 </tbody>
             </table>
         </div>

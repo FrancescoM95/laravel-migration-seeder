@@ -11,9 +11,9 @@
 </head>
 
 
-<body>
+<body class="bg-primary-subtle text-primary-emphasis">
 
-<main>
+<main >
     @yield('main-content')
 </main>
 
