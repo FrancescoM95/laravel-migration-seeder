@@ -7,12 +7,6 @@
     <title>{{ env('APP_NAME', 'Trains')}} | @yield('title')</title>
     <link rel="icon" href="{{ Vite::asset('resources/img/logo.png')}}">
 
-    <style>
-        body{
-            display: none
-        }
-    </style>
-    
     @vite('resources/js/app.js')
 </head>
 
